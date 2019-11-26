@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_mobil_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_mobil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@android:color/darker_gray" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_overlay" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_mobil_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_above="@id/tv_mobil_pabrikan"
+                    android:layout_marginStart="16dp"
+                    android:text="Mobil"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorTextIntro" />
+
+                <TextView
+                    android:id="@+id/tv_mobil_pabrikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="Pabrikan"
+                    android:textColor="@color/colorTextIntro" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_mobil_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:lineSpacingMultiplier="1"
+            android:text="Deskripsi"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</ScrollView>
